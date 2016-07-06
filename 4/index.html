@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin: 0;padding: 0}
+	#dv
+	{
+		width: 100px;
+		height: 100px;
+		background:yellow;
+		position:absolute;
+		border-top-right-radius: 50%;
+		border-top-left-radius: 50%;
+		border-bottom-right-radius: 50%;
+		border-bottom-left-radius: 50%;
+	}
+	.yan1,.yan2{
+		position: relative;
+		width: 20px;
+		height: 20px;
+		background: black;
+		border-top-right-radius: 50%;
+		border-top-left-radius: 50%;
+		border-bottom-right-radius: 50%;
+		border-bottom-left-radius: 50%;
+
+	}
+	#dv div{float: left;}
+	.yan1
+	{
+	left: 20px;
+	top:30px;
+	}
+	.yan2
+	{
+		left: 40px;
+		top:30px;
+		}
+	#cat{position: relative; clear:both;}
+	#cat div{float: left; position: absolute;}
+	.left{
+		clear: both;
+	width: 0;
+    height: 0;
+    border-top: 40px solid red;
+    border-right: 40px solid transparent;
+}
+    .right{
+    width: 0;
+    height: 0;
+    left: 60px;
+    border-top: 40px solid red;
+    border-left: 40px solid transparent; }
+    .yuan{ 
+    	width: 7px;
+    	height: 7px; 
+    	background: #fff;
+    	top:5px;
+    	margin-left: 5px;
+    	border-top-right-radius: 50%;
+		border-top-left-radius: 50%;
+		border-bottom-right-radius: 50%;
+		border-bottom-left-radius: 50%;
+    }
+    .bi{
+    	width: 0;
+    height: 0;
+    position: absolute;
+   top: 55px;
+    left: 44px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 15px solid red;}
+    .zui{ width: 0;
+    height: 0;
+    position: absolute;
+    top: 75px;
+    left: 41px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 7px solid red;}
+	</style>
+</head>
+<body>
+	<div id="ani">
+  <div id="cat">
+  <div class="left"></div>
+  	<div class="right"></div>
+  	</div>	
+  	<div id="dv">
+  	<div class="yan1">
+  		<div class="yuan"></div>
+  	</div>
+  	<div class="yan2">
+  		<div class="yuan"></div>
+  	</div>
+  	<div class="bi">
+  	</div>
+  	<div class="zui"></div>
+  </div>
+</div>
+</body>
+</html>
