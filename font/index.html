@@ -4,8 +4,35 @@
 	<meta charset="UTF-8">
 	<title>字体图标</title>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<style>
+	.clearfix:before,.clearfix:after {
+		content: " ";
+		display:table;
+		clear: both;
+	}
+
+	.box{
+		width: 100px; 
+		height: 100px;
+		background: blue;
+		padding: 20px;
+	    box-sizing:border-box;
+	    -moz-box-sizing:border-box;
+	    -webkit-box-sizing:border-box;
+	    -o-box-sizing:border-box;}
+
+	.box1{
+		width: 50px;
+	    height: 50px; 
+	    background: green;
+	}
+
+	</style>
 </head>
 <body>
-	<p class="icon-trash"></p>
+	<!-- <p class="icon-trash"></p> --><!--清除浮动-->
+	<div class="box clearfix">
+		<div class="box1"></div>
+	</div>
 </body>
 </html>
